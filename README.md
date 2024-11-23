@@ -1,4 +1,6 @@
 # **Building And Deploying A Movies Recommender System**
+## Deploy Link
+[Click HERE To View App](https://moviesrecommenderapp.herokuapp.com/)
 
 Content Based Recommender System recommends movies similar to the movie user likes and analyses the sentiments on the reviews given by the user for that movie.
 
@@ -118,9 +120,5 @@ Prepare your dataset:
         7. Connecting to your Heroku account 
         8. Deploy App
 
-
-## Demo
-
-[Click HERE To View App](https://moviesrecommenderapp.herokuapp.com/)
 
 

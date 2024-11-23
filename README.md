@@ -46,6 +46,3 @@ Prepare your dataset:
 [Click HERE To View App](https://moviesrecommenderapp.herokuapp.com/)
 
 
-
-![logo](https://github.com/MrBriit/Netflix-Recommender-System-and-Deployment/blob/main/net%20screenshot.png?raw=true)
-

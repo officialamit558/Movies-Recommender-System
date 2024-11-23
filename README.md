@@ -6,10 +6,9 @@ The details of the movies(title, genre, runtime, rating, poster, etc) are fetche
 
 We use *web scraping* to get the reviews given by the user in the IMDB site using beautifulsoup4 and performed sentiment analysis on those reviews.
 
-This project implements a Movie Recommendation System using Natural Language Processing (NLP) and collaborative filtering approaches. Below is the directory structure, installation guide, and feature overview.
+This project implements a Movie Recommendation System using Natural Language Processing (NLP) and Content based filtering approaches. Below is the directory structure, installation guide, and feature overview.
 
 ```plantext
-```plaintext
 Movie_Recommendation_System/
 ├── statics/
 │   ├── autocomplete.js       # JavaScript for autocomplete feature
@@ -27,7 +26,7 @@ Movie_Recommendation_System/
 ├── main.py                   # Main Flask application file
 ├── movies_metadata.csv       # Raw metadata about movies
 ├── newdata.csv               # Additional processed data for analysis
-├── NLP_model.pkl             # Pre-trained NLP model for text processing
+├── NLP_model.pkl             # Trained NLP model for text processing 
 ├── Procfile                  # Deployment configuration file for Heroku
 ├── requirements.txt          # Python dependencies list
 └── transformer.pkl           # Preprocessing transformer (e.g., vectorizer)

@@ -8,7 +8,7 @@ We use *web scraping* to get the reviews given by the user in the IMDB site usin
 
 This project implements a Movie Recommendation System using Natural Language Processing (NLP) and collaborative filtering approaches. Below is the directory structure, installation guide, and feature overview.
 
-```plaintext
+
 Movie_Recommendation_System/
 ├── statics/
 │   ├── autocomplete.js
@@ -33,29 +33,29 @@ Movie_Recommendation_System/
 
 ## Installation and Setup
 1. Clone the repository:
-
+```bash
 git clone https://github.com/your-username/Movie_Recommendation_System.git
+```
 
-
-2. Navigate to the project directory:
-
+3. Navigate to the project directory:
+```bash
 cd Movie_Recommendation_System
-
+```
 
 3. Install dependencies:
-
+```bash
 pip install -r requirements.txt
-
+```
 
 4. Run the application:
-
+```bash
 python main.py
-
+```
 
 5. Open your web browser and go to:
-
+```
 http://localhost:5000
-
+```
 
 
 Features
@@ -80,6 +80,7 @@ style.css: CSS file for styling the web application.
 loader.gif: Loading animation.
 
 recommended.js: Handles movie
+
 
 
 

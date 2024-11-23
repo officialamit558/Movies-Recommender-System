@@ -9,27 +9,28 @@ We use *web scraping* to get the reviews given by the user in the IMDB site usin
 This project implements a Movie Recommendation System using Natural Language Processing (NLP) and collaborative filtering approaches. Below is the directory structure, installation guide, and feature overview.
 
 ```plantext
+```plaintext
 Movie_Recommendation_System/
 ├── statics/
-│   ├── autocomplete.js
-│   ├── image.jpg
-│   ├── loader.gif
-│   ├── recommended.js
-│   └── style.css
+│   ├── autocomplete.js       # JavaScript for autocomplete feature
+│   ├── image.jpg             # Image assets for UI (e.g., logo or background)
+│   ├── loader.gif            # GIF used for a loading spinner
+│   ├── recommended.js        # JavaScript for fetching and rendering recommendations
+│   └── style.css             # CSS styles for the frontend
 ├── templates/
-│   ├── home.html
-│   └── recommended.html
-├── .gitignore
-├── data1.csv
-├── finaldata.csv
-├── main_data.csv
-├── main.py
-├── movies_metadata.csv
-├── newdata.csv
-├── NLP_model.pkl
-├── Procfile
-├── requirements.txt
-└── transformer.pkl
+│   ├── home.html             # Homepage template
+│   └── recommended.html      # Recommendation display page
+├── .gitignore                # Git ignore file
+├── data1.csv                 # Dataset of movie data
+├── finaldata.csv             # Processed dataset for model
+├── main_data.csv             # Main dataset for recommendations
+├── main.py                   # Main Flask application file
+├── movies_metadata.csv       # Raw metadata about movies
+├── newdata.csv               # Additional processed data for analysis
+├── NLP_model.pkl             # Pre-trained NLP model for text processing
+├── Procfile                  # Deployment configuration file for Heroku
+├── requirements.txt          # Python dependencies list
+└── transformer.pkl           # Preprocessing transformer (e.g., vectorizer)
 ```
 
 ## Installation and Setup

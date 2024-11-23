@@ -14,6 +14,9 @@ To run a Flask deployment tests, run the following command
 ```
 
 ![logo](https://github.com/officialamit558/Movies-Recommender-System/blob/main/static/Screenshot%20(259).png)
+![logo](https://github.com/officialamit558/Movies-Recommender-System/blob/main/static/Screenshot%20(260).png)
+![logo](https://github.com/officialamit558/Movies-Recommender-System/blob/main/static/Screenshot%20(261).png)
+![logo](https://github.com/officialamit558/Movies-Recommender-System/blob/main/static/Screenshot%20(262).png)
 
 ## Running Heroku Tests
 

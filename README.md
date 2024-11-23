@@ -15,7 +15,7 @@ To run a Flask deployment tests, run the following command
 
 // static/Screenshot (259).png
 
-![Alt text](static/Screenshot (259).png "Search Movie")
+![logo](static/Screenshot (259).png "Search Movie")
 
 ## Running Heroku Tests
 

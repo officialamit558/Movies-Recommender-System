@@ -8,7 +8,7 @@ We use *web scraping* to get the reviews given by the user in the IMDB site usin
 
 This project implements a Movie Recommendation System using Natural Language Processing (NLP) and collaborative filtering approaches. Below is the directory structure, installation guide, and feature overview.
 
-
+```plantext
 Movie_Recommendation_System/
 ├── statics/
 │   ├── autocomplete.js
@@ -30,6 +30,7 @@ Movie_Recommendation_System/
 ├── Procfile
 ├── requirements.txt
 └── transformer.pkl
+```
 
 ## Installation and Setup
 1. Clone the repository:

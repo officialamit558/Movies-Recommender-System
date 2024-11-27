@@ -102,7 +102,7 @@ recommended.js: Handles movie
 
 To run a Heroku deployment tests, click on the following link:
 
-[Netflix Recommender System App](https://netflixrecommenderapp.herokuapp.com/)
+[Movies Recommender System App](https://netflixrecommenderapp.herokuapp.com/)
 
 
 ## Deployment

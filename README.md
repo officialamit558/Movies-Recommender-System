@@ -1,6 +1,6 @@
 # **Building And Deploying A Movies Recommender System**
 ## Deployed Link
-[Click HERE To View App](https://moviesrecommenderapp.herokuapp.com/)
+[Click HERE To View App](https://moviesrecommendationsystem-6da23d63ead3.herokuapp.com/)
 
 Content Based Recommender System recommends movies similar to the movie user likes and analyses the sentiments on the reviews given by the user for that movie.
 
@@ -102,7 +102,7 @@ recommended.js: Handles movie
 
 To run a Heroku deployment tests, click on the following link:
 
-[Movies Recommender System App](https://netflixrecommenderapp.herokuapp.com/)
+[Movies Recommender System App](https://moviesrecommendationsystem-6da23d63ead3.herokuapp.com/)
 
 
 ## Deployment

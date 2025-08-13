@@ -4,7 +4,7 @@ from flask import Flask, render_template, request
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import json
-import bs4 as bs
+from bs4 import BeautifulSoup
 import urllib.request
 import pickle
 import requests
@@ -128,15 +128,23 @@ def recommend():
     cast_details = {cast_names[i]:[cast_ids[i], cast_profiles[i], cast_bdays[i], cast_places[i], cast_bios[i]] for i in range(len(cast_places))}
 
      # Fetch user reviews from IMDb
+    url = f"https://www.imdb.com/title/{imdb_id}/reviews?ref_=tt_ov_rat"
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/114.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": f"https://www.imdb.com/title/{imdb_id}/",
+        "Connection": "keep-alive",
     }
-    url = f'https://www.imdb.com/title/{imdb_id}/reviews?ref_=tt_ov_rt'
+
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
-        sauce = response.content
-        soup = bs.BeautifulSoup(sauce, 'lxml')
-        soup_result = soup.find_all("div", {"class": "text show-more__control"})
+        soup = BeautifulSoup(response.content, 'lxml')
+        soup_result = soup.find_all("div", {"class": "ipc-html-content-inner-div"})
 
         reviews_list = []
         reviews_status = []
@@ -146,12 +154,12 @@ def recommend():
                 movie_review_list = np.array([reviews.string])
                 movie_vector = vectorizer.transform(movie_review_list)
                 pred = clf.predict(movie_vector)
-                reviews_status.append('Good' if pred else 'Bad')
+                reviews_status.append('Good' if int(pred[0]) else 'Bad')
 
         movie_reviews = {reviews_list[i]: reviews_status[i] for i in range(len(reviews_list))}
     else:
         movie_reviews = {"Error": f"Failed to fetch reviews. HTTP Error {response.status_code}"}
-
+    
     # Pass data to the HTML file
     return render_template(
         'recommend.html',

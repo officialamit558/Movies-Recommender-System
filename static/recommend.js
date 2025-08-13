@@ -66,7 +66,7 @@ $(function() {
       url:"/similarity",
       data:{'name':movie_title},
       success: function(recs){
-        if(recs=="Sorry! The movie you requested is not in our database. Please check the spelling or try with some other movies"){
+        if(recs=="Sorry! try another movie name"){
           $('.fail').css('display','block');
           $('.results').css('display','none');
           $("#loader").delay(500).fadeOut();
